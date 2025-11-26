@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -89,18 +90,8 @@
   <script>
     // Board A und Board B – je eine eigene CSV-Datei
     document.addEventListener("DOMContentLoaded", () => {
-      loadBoard(TITLE;Skill Quadrate – Gruppe E;
-                Research;6;#16a085
-                Prototyping;7;#8e44ad
-                Testing;5;#2980b9
-                Dokumentation;3;#7f8c8d
-                Kundenkontakt;4;#d35400);
-      loadBoard(TITLE;Skill Quadrate – Gruppe D;
-                UX;8;red
-                HTML;5;#e34c26
-                CSS;3;#264de4
-                JS;10;goldenrod
-                Security;4;#c0392b);
+      loadBoard("board-a.csv", "titleA", "rowsA", "errorA");
+      loadBoard("board-b.csv", "titleB", "rowsB", "errorB");
     });
 
     async function loadBoard(url, titleId, rowsId, errorId) {
